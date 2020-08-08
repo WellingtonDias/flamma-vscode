@@ -1,0 +1,67 @@
+{
+	"name": "Flamma",
+	"scopeName": "source.flamma",
+	"patterns":
+	[
+		{
+			"name": "comment.line.number-sign",
+			"match": "#.*?(#|$)"
+		},
+		{
+			"name": "keyword.import",
+			"match": "\\b(import)\\b"
+		},
+		{
+			"name": "storage.modifier",
+			"match": "\\b(global|thread|local|public|protected|private|constant|variable)\\b"
+		},
+		{
+			"match": "(:) ?([@A-Za-z_][@\\w]*)",
+			"captures":
+			{
+				"1": {"name": "keyword.operator"},
+				"2": {"name": "storage.type"}
+			}
+		},
+		{
+			"name": "keyword.operator",
+			"match": "( = | \\:= | \\+= | -= | \\*= | \\/= | %= |not| and | or | xor |\\+|-| \\+ | - | \\* | \\/ | % |&|\\.| << | <= | == | != | >= | >> |\\.\\.\\.)"
+		},
+		{
+			"name": "keyword.control",
+			"match": "\\b(if|elseif|else|while|try|catch|finally|break|continue|throw|return)\\b"
+		},
+		{
+			"name": "keyword.routine",
+			"match": "\\b(function|closure|class|async|await|create|compose|extends|destroy)\\b"
+		},
+		{
+			"name": "keyword.block",
+			"match": "\\b(begin|end)\\b"
+		},
+		{
+			"name": "constant.language",
+			"match": "\\b(null|false|true)\\b"
+		},
+		{
+			"name": "constant.numeric",
+			"match": "-?\\d+(\\.\\d)?\\d*"
+		},
+		{
+			"name": "string.quoted.double",
+			"begin": "\"",
+			"end": "\""
+		},
+		{
+			"match": "\\b([@A-Za-z_][@\\w]*)\\(",
+			"captures":
+			{
+				"1": {"name": "suport.function"}
+			}
+		},
+		{
+			"name": "variable.other",
+			"match": "\\b([@A-Za-z_][@\\w]*)\\b"
+		}
+	]
+}

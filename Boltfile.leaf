@@ -1,0 +1,17 @@
+{
+	modules =
+	{
+		clean = "https://raw.githubusercontent.com/WellingtonDias/bolt-clean/master/index.js",
+		execute = "https://raw.githubusercontent.com/WellingtonDias/bolt-execute/master/index.js",
+		git-commit = "https://raw.githubusercontent.com/WellingtonDias/bolt-git-commit/master/index.js"
+	},
+	clean = "./flamma.vsix",
+	execute = "vsce package -o './flamma.vsix'",
+	git-commit = "",
+	macros =
+	{
+		build = "execute",
+		commit = "git-commit",
+		clean = "clean"
+	}
+}

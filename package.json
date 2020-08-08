@@ -1,0 +1,36 @@
+{
+	"name": "flamma-vscode",
+	"version": "1.0.0",
+	"description": "Flamma language support for Visual Studio Code",
+	"author": "Wellington Dias <wellingtongomesdias@gmail.com> (https://poliglota.me)",
+	"license": "MIT",
+
+	"keywords": ["flamma","language","poliglota-me","poliglota.me","poliglota"],
+	"homepage": "https://flamma.poliglota.me",
+	"repository": "github:WellingtonDias/flamma-vscode",
+
+	"icon": "icon.png",
+	"displayName": "Flamma",
+	"publisher": "wellingtondias",
+	"engines": {"vscode": "*"},
+	"categories": ["Programming Languages"],
+	"contributes":
+	{
+		"languages":
+		[
+			{
+				"id": "flamma",
+				"extensions": [".fls"],
+				"configuration": "./flamma.json"
+			}
+		],
+		"grammars":
+		[
+			{
+				"language": "flamma",
+				"scopeName": "source.flamma",
+				"path": "./flamma.tmLanguage.json"
+			}
+		]
+	}
+}
