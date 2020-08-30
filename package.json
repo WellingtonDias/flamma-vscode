@@ -1,6 +1,6 @@
 {
 	"name": "flamma-vscode",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Flamma language support for Visual Studio Code",
 	"author": "Wellington Dias <wellingtongomesdias@gmail.com> (https://poliglota.me)",
 	"license": "MIT",

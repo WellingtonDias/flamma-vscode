@@ -9,7 +9,7 @@
 		},
 		{
 			"name": "keyword.import",
-			"match": "\\b(import)\\b"
+			"match": "\\bimport\\b"
 		},
 		{
 			"name": "storage.modifier",
@@ -25,7 +25,7 @@
 		},
 		{
 			"name": "keyword.operator",
-			"match": "( = | \\:= | \\+= | -= | \\*= | \\/= | %= |not| and | or | xor |\\+|-| \\+ | - | \\* | \\/ | % |&|\\.| << | <= | == | != | >= | >> |\\.\\.\\.)"
+			"match": " = | \\:= | \\+= | -= | \\*= | \\/= | %= |not| and | or | xor |\\+|-| \\+ | - | \\* | \\/ | % |&|\\.| << | <= | == | != | >= | >> |\\.\\.\\."
 		},
 		{
 			"name": "keyword.control",
@@ -61,7 +61,7 @@
 		},
 		{
 			"name": "variable.other",
-			"match": "\\b([@A-Za-z_][@\\w]*)\\b"
+			"match": "\\b[@A-Za-z_][@\\w]*\\b"
 		}
 	]
 }
